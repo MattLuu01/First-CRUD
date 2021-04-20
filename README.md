@@ -1,5 +1,5 @@
 # First-CRUD
-My first CRUD (Create, Read, Update, Delete) Application
+My first CRUD (Create, Read, Update, Delete) Application that tracks books
 
 -Used Java and JavaFX with Netbeans to develop along with help from internet resources
 
