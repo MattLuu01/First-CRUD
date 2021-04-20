@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="404.0" prefWidth="800.0" style="-fx-background-color: #bbdefb;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.xemacscode.demo.MainController">
+   <children>
+      <VBox layoutX="57.0" layoutY="48.0" prefHeight="190.0" prefWidth="72.0" spacing="15.0">
+         <children>
+            <Label text="ID">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="Title">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="Author">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="Year">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="Pages">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="129.0" layoutY="48.0" prefHeight="190.0" prefWidth="223.0" spacing="10.0">
+         <children>
+            <TextField fx:id="tfID" />
+            <TextField fx:id="tfTitle" layoutX="10.0" layoutY="10.0" />
+            <TextField fx:id="tfAuthor" layoutX="10.0" layoutY="50.0" />
+            <TextField fx:id="tfYear" layoutX="10.0" layoutY="90.0" />
+            <TextField fx:id="tfPages" layoutX="10.0" layoutY="130.0" />
+         </children>
+      </VBox>
+      <TableView fx:id="tvBooks" layoutX="400.0" layoutY="48.0" onMouseClicked="#handleMouseAction" prefHeight="294.0" prefWidth="376.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="colTitle" prefWidth="87.0" text="Title" />
+            <TableColumn fx:id="colAuthor" prefWidth="85.0" text="Author" />
+            <TableColumn fx:id="colYear" prefWidth="53.0" text="Year" />
+            <TableColumn fx:id="colPages" prefWidth="75.0" text="Pages" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnInsert" layoutX="91.0" layoutY="268.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="89.0" text="Insert">
+         <graphic>
+            <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons8_add_16px.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btnDelete" layoutX="286.0" layoutY="268.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="89.0" text="Delete">
+         <graphic>
+            <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons8_delete_16px.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btnUpdate" layoutX="190.0" layoutY="268.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="89.0" text="Update">
+         <graphic>
+            <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icons8_update_16px.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+   </children>
+</AnchorPane>
